@@ -22,6 +22,19 @@ This repository implements a discrete‐event simulation of San Francisco Fire D
 - Python 3.8+
 - pandas, numpy, geopy, scipy, matplotlib
 
+## Project Sturecture
+- **SF_Facilities.csv**  
+  Contains station IDs and their latitude/longitude.
+- **simulated_calls.csv**  
+  Synthetic “day-to-day” call arrival data used for normal-mode benchmarking.
+- **surge_simulated_calls.csv**  
+  Extended call log including a quake-induced surge period.
+- **SF_FDplusElev_data_after_2009.csv & SF_FDplusElev_data_before_2009** 
+  Merged Fire-Department call records with SF elevation data. Check https://www.kaggle.com/datasets/bengin/SanFranciscoFireDepartmentCalls for downloading.
+- **290.ipynb**  
+  Interactive notebook with all dispatch logic, metrics calculation, and visualization code.
+- **README.md**
+
 ## Running the Simulation
 - Load station data (SF_Facilities.csv)
 - Generate or load calls (simulated_calls.csv / surge_simulated_calls.csv)
